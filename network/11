@@ -1,0 +1,19 @@
+This is first device with public IP.
+For example
+6% traceroute slash16.org
+traceroute: Warning: slash16.org has multiple addresses; using 13.33.47.40
+traceroute to slash16.org (13.33.47.40), 64 hops max, 52 byte packets
+ 1  192.168.20.1 (192.168.20.1)  2.648 ms  1.087 ms  1.592 ms
+ 2  192.168.2.9 (192.168.2.9)  0.355 ms  0.298 ms  0.320 ms
+ 3  217-67-187-49.in-addr.mastertelecom.ru (217.67.187.49)  2.310 ms  2.577 ms  3.466 ms
+ 4  mail.neoresurs.ru (217.67.176.130)  0.501 ms  0.521 ms  0.485 ms
+ 5  217-67-176-205.in-addr.mastertelecom.ru (217.67.176.205)  1.452 ms  1.496 ms  1.410 ms
+ 6  ae11-227.rt.mr.msk.ru.retn.net (87.245.253.69)  1.153 ms  1.234 ms  1.137 ms
+ 7  ae1-3.rt.irx.sto.se.retn.net (87.245.234.206)  22.148 ms  22.075 ms  21.829 ms
+ 8  gw-amazon.retn.net (87.245.249.29)  21.811 ms  21.949 ms  21.753 ms
+ ...
+
+ line 3 
+ name  217-67-187-49.in-addr.mastertelecom.ru
+ ip 217.67.187.49
+ 
