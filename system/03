@@ -1,0 +1,5 @@
+/etc/hostname
+
+command 
+hostname new-hostname
+temporarily changes /proc/sys/kernel/hostname
