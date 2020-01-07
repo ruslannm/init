@@ -1,0 +1,3 @@
+# For example, new user's name is 'test' with non-empty password.
+# for connection in GUI session you may login as 'test'
+# for connection via ssh you need command ssh test@IP-address
