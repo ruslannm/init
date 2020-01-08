@@ -1,0 +1,8 @@
+#!/bin/sh
+echo "sort folder by size"
+if [ -n "$1" ]
+then
+	ls -sh $1/* | sort -h
+else
+	ls -sh | sort -h
+fi
