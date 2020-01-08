@@ -1,1 +1,6 @@
 systemctl stop ssh
+#but this command does not kill the connections that are the processes.
+#Commands for killing connections:
+#find id's processes
+#ps -aux | grep -E [s]sh | grep pts/ 
+#kill -15 PID

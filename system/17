@@ -1,2 +1,3 @@
-# ssh USERNAME@HOST/IP_ADDR
+#ssh -p 22 USERNAME@HOST/IP_ADDR
+#default port 22
 ssh rgero-debian@192.168.56.101
