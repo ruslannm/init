@@ -1,2 +1,5 @@
-Just add the lines below to the end of the file
-46.19.122.85 intra.42.fr
+#We can't do it. But with permissions:
+#Just add the lines below to the end of the file /etc/hosts
+#46.19.122.85 intra.42.fr
+# or 
+# sudo echo 46.19.122.85 intra.42.fr >> /etc/hosts

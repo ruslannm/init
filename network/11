@@ -1,6 +1,6 @@
 This is first device with public IP.
 For example
-6% traceroute slash16.org
+% traceroute slash16.org
 traceroute: Warning: slash16.org has multiple addresses; using 13.33.47.40
 traceroute to slash16.org (13.33.47.40), 64 hops max, 52 byte packets
  1  192.168.20.1 (192.168.20.1)  2.648 ms  1.087 ms  1.592 ms
