@@ -1,6 +1,25 @@
 #!/bin/sh
-procs='lsof -u testuser | grep -v 'PID' | awk -F ' ' '{print $2}' | uniq'
-for i in $procs
-do
-	echo $i
-done
+UID_ROOT=0
+if [ "$(id -ru)" -ne "$UID_ROOT" ]
+then
+        echo "You need login as root or sudo"
+        exit 1
+fi
+if [ -n "$1" ]
+then
+        grep "^$1:" /etc/passwd > /dev/null
+        if [ $? -ne 0 ]
+        then
+                echo "No USERNAME found"
+                exit 1
+        else
+                for i in $(lsof -u $1 | grep -v 'PID' | awk -F ' ' '{print $2}' | uniq)
+                do
+                        kill -9 $i
+                done
+                deluser --remove-home -f "$1"
+        fi
+else
+        echo "Usage: sudo bash deluser USERNAME"
+        exit 1
+fi
