@@ -1,0 +1,6 @@
+#!/bin/sh
+procs='lsof -u testuser | grep -v 'PID' | awk -F ' ' '{print $2}' | uniq'
+for i in $procs
+do
+	echo $i
+done
